@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curriculum Vitae | Herald Luwizghie</title>
+  <!-- Google Font (Optional for a modern look) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* Global Reset and Box Sizing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(135deg, #0f4c75, #3282b8);
+      color: #fff;
+      padding: 1.5rem 1rem;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    /* Header Container for spacing and alignment */
+    .header-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Profile Photo */
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 1rem;
+      border: 3px solid #fff;
+    }
+
+    /* Header Text */
+    .header-text {
+      flex: 1;
+    }
+    .header-text h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Contact Section in Header */
+    .contact {
+      margin-left: auto; /* push contact to the right */
+      text-align: right;
+    }
+    .contact h2 {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+    .contact p {
+      margin: 0.2rem 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    .contact a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Section Titles */
+    section h2 {
+      font-size: 1.2rem;
+      color: #0f4c75;
+      margin-bottom: 0.8rem;
+      border-bottom: 2px solid #ddd;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+      font-weight: 600;
+    }
+
+    /* Lists and Items */
+    section ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    section li {
+      margin: 0.5rem 0;
+    }
+
+    /* Subheadings in Experience */
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #333;
+      margin-top: 1.5rem;
+      margin-bottom: 0.2rem;
+    }
+    p em {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      padding: 1rem 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      .profile-photo {
+        margin: 0 auto 1rem;
+      }
+      .header-text,
+      .contact {
+        text-align: center;
+        margin-left: 0;
+      }
+      .contact {
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <!-- Replace with Herald's photo if available -->
+      <img
+        src="herald_photo.jpg"
+        alt="Herald Luwizghie"
+        class="profile-photo"
+      />
+      <div class="header-text">
+        <h1>Herald Luwizghie</h1>
+      </div>
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>📞 +265 991 417 759</p>
+        <p>✉️ <a href="mailto:luwizghieherald@gmail.com">luwizghieherald@gmail.com</a></p>
+        <p>🔗 <a href="https://linkedin.com/in/herald-luwizghie-60b956296" target="_blank">LinkedIn</a></p>
+        <p>📍 Lilongwe, Malawi</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Professional Summary -->
+    <section id="professional-summary">
+      <h2>Professional Summary</h2>
+      <p>
+        Experienced Data Quality Specialist with over 8 years of expertise in
+        designing, developing, and deploying scalable and accessible MIS solutions,
+        including DHIS2-based systems. Skilled in stakeholder engagement, training,
+        and capacity building. Proven track record in delivering data-driven 
+        solutions for government, non-profits, and international development projects.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Educational Background</h2>
+      <ul>
+        <li><strong>MSc Data Science (In Progress)</strong><br />
+            University of East London – Expected 2026
+        </li>
+        <li><strong>Bachelor of Science in Monitoring and Evaluation</strong><br />
+            The Catholic University of Malawi – 2023
+        </li>
+      </ul>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience">
+      <h2>Work Experience</h2>
+
+      <!-- Data Quality and Use Specialist -->
+      <div>
+        <h3>Data Quality and Use Specialist</h3>
+        <p><em>John Snow Inc (JSI) – Lilongwe | January 2023 – Present</em></p>
+        <ul>
+          <li>Led the design and deployment of a DHIS2-based Health Management Information System (HMIS) for NMCP.</li>
+          <li>Configured data elements, indicators, and custom dashboards for real-time data visualization and reporting.</li>
+          <li>Provided technical support on data quality, analysis, and use for evidence-based decision-making at program, district, and facility levels.</li>
+          <li>Supported NMCP in mentoring District staff on monthly malaria data quality checks in DHIS2 using the WHO DQA application, facilitating timely data cleaning.</li>
+          <li>Conducted comprehensive user training sessions to stakeholders, enhancing system adoption rates by 85%.</li>
+          <li>Developed technical documentation and user manuals tailored to diverse user groups.</li>
+        </ul>
+      </div>
+
+      <!-- DHIS2 Systems Administrator -->
+      <div>
+        <h3>DHIS2 Systems Administrator</h3>
+        <p><em>Family Health Services (FHS) – Blantyre | May 2016 – December 2023</em></p>
+        <ul>
+          <li>Responsible for DHIS2 Systems Administration for PSI Malawi / Family Health Services & DREAMS Database—managing dashboards, programs, data elements, and user roles.</li>
+          <li>Created scorecards for different programs in DHIS2, encouraging the use of the interpretation feature to promote data use.</li>
+          <li>Managed Health Network Quality Improvement System (HNQIS) 1.6 and 2.0 for OTSS checklists and supervised debugging and troubleshooting.</li>
+          <li>Provided capacity building and mentorships to NMCP staff on using HNQIS during Impact Malaria Supportive Supervision (IMSS).</li>
+          <li>Developed and maintained advanced data visualizations using MS Excel, DHIS2, and PowerBI for real-time performance monitoring.</li>
+          <li>Led Data Quality Assessments (DQA) at district and facility level to promote accurate data capture and utilization.</li>
+          <li>Developed SOPs and training materials for multiple FHS projects and organized monthly project coordination meetings with stakeholders.</li>
+        </ul>
+      </div>
+
+      <!-- MERL Officer -->
+      <div>
+        <h3>MERL Officer</h3>
+        <p><em>Family Health Services (FHS) – Blantyre | May 2016 – December 2023</em></p>
+        <ul>
+          <li>Oversaw DHIS2 program indicator updates, user management, and data set configurations for PSI Malawi / FHS & DREAMS Database.</li>
+          <li>Introduced scorecards and encouraged the use of DHIS2’s interpretation feature among program managers, increasing data-driven discussions.</li>
+          <li>Coordinated with program managers to develop and test innovative data collection and DQA tools.</li>
+          <li>Conducted refresher trainings for service providers and HMIS officers on data entry and analysis during DQAs.</li>
+          <li>Established consistent frameworks for monthly reporting and feedback loops using system-generated dashboards.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="technical-skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Platforms:</strong> DHIS2, Kobo Collect, OpenLMIS</li>
+        <li><strong>Programming Languages:</strong> R, Java, Python, JavaScript, SQL</li>
+        <li><strong>Database Management:</strong> PostgreSQL, MySQL</li>
+        <li><strong>Tools & Frameworks:</strong> Git, JIRA, RESTful APIs</li>
+        <li><strong>Specialized Skills:</strong>
+          <ul>
+            <li>DHIS2 Configuration and Deployment</li>
+            <li>Data Migration and Validation</li>
+            <li>Accessibility Integration for Digital Platforms</li>
+            <li>Training Material and SOP Development</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Key Achievements -->
+    <section id="achievements">
+      <h2>Key Achievements</h2>
+      <ul>
+        <li>Participated in the development of Malawi DREAMS (DHIS2) database (USAID), used by 8+ partners including MoH, PEPFAR, and USAID.</li>
+        <li>Appointed DHIS2 Systems Administrator for Malawi DREAMS database (USAID).</li>
+        <li>Led administration and maintenance of the OTSS Malawi DHIS2 (HNQIS 1.7) for NMCP—<em>https://otss-malawi.org/</em>.</li>
+        <li>Developed an Integrated Supportive Supervision and Mentorship tool on DHIS2 using HNQIS 2.0 configuration—<em>https://nmcpissm-malawi.org/</em>.</li>
+        <li>Hands-on practical experience setting up and managing MER systems for health programs and training others in their use.</li>
+      </ul>
+    </section>
+
+    <!-- Professional Development -->
+    <section id="professional-development">
+      <h2>Professional Development</h2>
+      <ul>
+        <li>Advanced DHIS2 Configuration and Implementation (Certificate) – DHM, 2023</li>
+        <li>DHIS2 Fundamentals (Certificate) – University of Oslo, 2017</li>
+      </ul>
+    </section>
+
+    <!-- References -->
+    <section id="references">
+      <h2>References</h2>
+      <p>Available upon request.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Herald Luwizghie. All rights reserved.</p>
+  </footer>
+</body>
+</html>

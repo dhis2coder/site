@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -95,9 +95,12 @@
       box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     }
     .team-member img {
-      width: 100%;
-      height: auto;
+      width: 150px; /* Fixed size for profile images */
+      height: 150px;
       object-fit: cover;
+      border-radius: 50%; /* Circular image */
+      margin: 0 auto;
+      display: block;
     }
     .member-details {
       padding: 1.5rem;
@@ -166,6 +169,11 @@
       transform: translateY(-5px);
       box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     }
+    .tile-icon {
+      width: 60px; /* Reduced size for portfolio icons */
+      height: 60px;
+      margin-bottom: 1rem;
+    }
     .tile h3 {
       font-size: 1.1rem;
       color: #0f4c75;
@@ -203,9 +211,20 @@
       font-size: 0.9rem;
     }
 
+    /* Responsive Adjustments */
+    @media screen and (max-width: 768px) {
+      .team-member img {
+        width: 120px; /* Smaller profile images for mobile */
+        height: 120px;
+      }
+      .tile-icon {
+        width: 50px; /* Smaller icons for mobile */
+        height: 50px;
+      }
+    }
+
   </style>
 </head>
-
 <body>
   <header>
     <h1>DHIS2 & M&E Consultancy Team</h1>

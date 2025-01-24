@@ -3,94 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Team - DHIS2 Specialists</title>
+  <title>DHIS2 & M&E Team</title>
+
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
     rel="stylesheet"
   />
 
   <style>
-    /* Global Reset */
+    /* Global Reset and Box Sizing */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
     }
 
     body {
-      font-family: 'Arial', sans-serif;
       background-color: #f9f9f9;
       color: #333;
       line-height: 1.6;
     }
 
+    /* Header Styles */
     header {
       background: linear-gradient(135deg, #0f4c75, #3282b8);
       color: #fff;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       text-align: center;
       margin-bottom: 2rem;
     }
-
     header h1 {
       font-size: 2rem;
       font-weight: 600;
+      margin-bottom: 0.5rem;
     }
-
     header p {
       font-size: 1rem;
-      margin-top: 0.5rem;
+      font-weight: 300;
+      max-width: 700px;
+      margin: 0.5rem auto 0;
     }
 
+    /* Main Container */
     main {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 1rem;
     }
 
+    /* About Us Section */
+    .about-section {
+      background-color: #fff;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .about-section h2 {
+      color: #0f4c75;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+    .about-section p {
+      margin-top: 1rem;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    /* Team Container */
     .team-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
     }
-
     .team-member {
-      background: #fff;
+      background-color: #fff;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       overflow: hidden;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
     .team-member:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     }
-
     .team-member img {
       width: 100%;
       height: auto;
       object-fit: cover;
     }
-
     .member-details {
       padding: 1.5rem;
     }
-
-    .member-details h2 {
+    .member-details h3 {
       font-size: 1.2rem;
       font-weight: 600;
       margin-bottom: 0.5rem;
       color: #0f4c75;
     }
-
     .member-details p {
       font-size: 0.9rem;
       color: #555;
       margin-bottom: 1rem;
+      font-weight: 300;
     }
-
     .member-details a {
       display: inline-block;
       text-decoration: none;
@@ -102,65 +125,167 @@
       border-radius: 5px;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
-
     .member-details a:hover {
       background-color: #3282b8;
       color: #fff;
     }
 
+    /* Portfolio Section */
+    .portfolio-section {
+      background-color: #fff;
+      padding: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .portfolio-section h2 {
+      color: #0f4c75;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+    .portfolio-tiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .tile {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .tile:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .tile h3 {
+      font-size: 1.1rem;
+      color: #0f4c75;
+      margin-bottom: 0.5rem;
+    }
+    .tile p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+    .tile a {
+      display: inline-block;
+      text-decoration: none;
+      color: #3282b8;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border: 1px solid #3282b8;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .tile a:hover {
+      background-color: #3282b8;
+      color: #fff;
+    }
+
+    /* Footer */
     footer {
       text-align: center;
-      padding: 1rem 0;
+      padding: 1rem;
+      background-color: #fff;
       margin-top: 2rem;
-      color: #555;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+      font-size: 0.9rem;
     }
+
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Meet Our Team</h1>
-    <p>DHIS2 Specialists | Data Quality Experts | M&E Professionals</p>
+    <h1>DHIS2 & M&E Consultancy Team</h1>
+    <p>Your partners for data-driven solutions, from system configuration to insightful analytics.</p>
   </header>
 
   <main>
-    <section class="team-container">
-      <!-- Herald's Profile -->
-      <div class="team-member">
-        <img src="assets/herald_photo.jpg" alt="Herald Luwizghie">
-        <div class="member-details">
-          <h2>Herald Luwizghie</h2>
-          <p>DHIS2 Specialist | Data Quality Expert</p>
-          <a href="Herald_cv.html" target="_blank">View CV</a>
-        </div>
-      </div>
+    <!-- About Us Section -->
+    <section class="about-section">
+      <h2>About Us</h2>
+      <p>
+        We are a team of experienced Monitoring and Evaluation (M&E) specialists, data analysts,
+        and DHIS2 experts with over 15 years of combined experience in designing, configuring, 
+        and deploying scalable health data management systems. Our expertise spans DHIS2 tracker 
+        program development, Data Visualizations, and capacity building, with a focus on HIV/TB 
+        and other health-related projects. With advanced degrees in Public Health and Monitoring & 
+        Evaluation, we have successfully supported national programs and international organizations 
+        like World Vision (IRS), ABT Associates, and PSI. Our commitment lies in delivering innovative 
+        solutions tailored to improve data-driven decision-making and program outcomes.
+      </p>
+    </section>
 
-      <!-- Bernard's Profile -->
-      <div class="team-member">
-        <img src="assets/bernard_photo.jpg" alt="Bernard Banda">
-        <div class="member-details">
-          <h2>Bernard Banda</h2>
-          <p>DHIS2 Expert | Biostatistician | M&E Expert</p>
-          <a href="Bernard_cv.html" target="_blank">View CV</a>
+    <!-- Meet Our Team Section -->
+    <section>
+      <h2 style="color: #0f4c75; margin-bottom: 1rem;">Meet Our Team</h2>
+      <div class="team-container">
+        <!-- Herald's Profile -->
+        <div class="team-member">
+          <img src="herald_photo.jpg" alt="Herald Luwizghie" />
+          <div class="member-details">
+            <h3>Herald Luwizghie</h3>
+            <p>DHIS2 Specialist | Data Quality Expert</p>
+            <a href="herald_cv.html" target="_blank">View CV</a>
+          </div>
         </div>
-      </div>
 
-      <!-- Add more team members here -->
-      <!-- Example Template -->
-      <!--
-      <div class="team-member">
-        <img src="member_photo.jpg" alt="Member Name">
-        <div class="member-details">
-          <h2>Member Name</h2>
-          <p>Role | Expertise</p>
-          <a href="member_cv.html" target="_blank">View CV</a>
+        <!-- Bernard's Profile -->
+        <div class="team-member">
+          <img src="bernard_photo.jpg" alt="Bernard Banda" />
+          <div class="member-details">
+            <h3>Bernard Banda</h3>
+            <p>Epidemiologist | Biostatistician | M&E Expert</p>
+            <a href="bernard_cv.html" target="_blank">View CV</a>
+          </div>
+        </div>
+
+        <!-- Add more team members here if needed -->
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+      <h2>Our Portfolio</h2>
+      <div class="portfolio-tiles">
+        <!-- DHIS2 Tile -->
+        <div class="tile">
+          <h3>DHIS2</h3>
+          <p>Explore our configurations, tracker setups, and custom dashboards.</p>
+          <a href="dhis2.html" target="_blank">View Project</a>
+        </div>
+
+        <!-- R-Shiny Tile -->
+        <div class="tile">
+          <h3>R-Shiny</h3>
+          <p>Interactive dashboards for advanced data visualization and analysis.</p>
+          <a href="r-shiny.html" target="_blank">View Project</a>
+        </div>
+
+        <!-- ODK Tile -->
+        <div class="tile">
+          <h3>ODK</h3>
+          <p>Mobile data collection workflows for streamlined field data entry.</p>
+          <a href="ODK.html" target="_blank">View Project</a>
         </div>
       </div>
-      -->
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Our Team. All rights reserved.</p>
+    <p>&copy; 2025 DHIS2 & M&E Consultancy Team. All rights reserved.</p>
   </footer>
 </body>
 </html>

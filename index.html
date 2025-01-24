@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Team - DHIS2 Specialists</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f4c75, #3282b8);
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .team-member {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-member img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .member-details {
+      padding: 1.5rem;
+    }
+
+    .member-details h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #0f4c75;
+    }
+
+    .member-details p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .member-details a {
+      display: inline-block;
+      text-decoration: none;
+      color: #3282b8;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #3282b8;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .member-details a:hover {
+      background-color: #3282b8;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meet Our Team</h1>
+    <p>DHIS2 Specialists | Data Quality Experts | M&E Professionals</p>
+  </header>
+
+  <main>
+    <section class="team-container">
+      <!-- Herald's Profile -->
+      <div class="team-member">
+        <img src="herald_photo.jpg" alt="Herald Luwizghie">
+        <div class="member-details">
+          <h2>Herald Luwizghie</h2>
+          <p>DHIS2 Specialist | Data Quality Expert</p>
+          <a href="herald_cv.html" target="_blank">View CV</a>
+        </div>
+      </div>
+
+      <!-- Bernard's Profile -->
+      <div class="team-member">
+        <img src="bernard_photo.jpg" alt="Bernard Banda">
+        <div class="member-details">
+          <h2>Bernard Banda</h2>
+          <p>Epidemiologist | Biostatistician | M&E Expert</p>
+          <a href="bernard_cv.html" target="_blank">View CV</a>
+        </div>
+      </div>
+
+      <!-- Add more team members here -->
+      <!-- Example Template -->
+      <!--
+      <div class="team-member">
+        <img src="member_photo.jpg" alt="Member Name">
+        <div class="member-details">
+          <h2>Member Name</h2>
+          <p>Role | Expertise</p>
+          <a href="member_cv.html" target="_blank">View CV</a>
+        </div>
+      </div>
+      -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Our Team. All rights reserved.</p>
+  </footer>
+</body>
+</html>
